@@ -1,0 +1,63 @@
+.SectionList {
+  padding: 20px;
+  font-family: 'OpenSans', sans-serif;
+  width: 570px;
+  .work {
+    background-color: #4263eb;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 12px;
+  }
+  ul {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    list-style: none;
+    border-radius: 10px;
+    li {
+      padding: 8px 0;
+    }
+    li:first-child {
+      line-height: 30px;
+      font-size: 21px;
+      color: #364fc7;
+      padding-bottom: 15px;
+    }
+    li:last-child {
+      display: flex;
+    }
+    li {
+      button {
+        font-size: 14px;
+        padding: 15px 25px;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: black;
+        color: white;
+        transition:
+          background-color 0.3s ease,
+          transform 0.3s ease;
+        &:hover {
+          background-color: #333;
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      }
+      button:last-child {
+        background-color: #e7e7e7;
+        color: black;
+        transition:
+          background-color 0.3s ease,
+          transform 0.3s ease;
+        &:hover {
+          background-color: #a9a6a6;
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
