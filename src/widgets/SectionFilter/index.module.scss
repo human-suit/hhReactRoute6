@@ -1,9 +1,13 @@
 .sectionFilter {
   padding: 20px;
   font-family: 'OpenSans', sans-serif;
-  div {
+  .blockFilter {
     padding: 30px 20px;
-    width: 317px;
+  }
+  .inputRow {
+    display: flex;
+  }
+  div {
     border-radius: 10px;
     background-color: white;
     height: fit-content;
@@ -12,7 +16,7 @@
     position: relative;
     height: fit-content;
     .grid {
-      margin-top: 0px;
+      margin-top: 20px;
       padding-left: 0px;
       width: 300px;
       display: flex;
@@ -30,7 +34,7 @@
       }
       button {
         position: relative;
-        margin-top: 0px;
+        margin-top: 5px;
         margin-left: 10px;
         background-color: transparent;
         padding: 0px;
@@ -41,12 +45,11 @@
       font-size: 14px;
       line-height: 20px;
       font-weight: 500;
+      padding-top: 5px;
     }
     input {
       margin-top: 20px;
       padding: 10px 50px 10px 10px;
-      border: 1px solid gray;
-      border-radius: 10px;
       &:focus {
         outline: none;
       }
@@ -54,30 +57,31 @@
     button {
       position: absolute;
       margin-top: 20px;
-      margin-left: 10px;
+      margin-left: 250px;
       background-color: #228be6;
       border: none;
       border-radius: 8px;
-      padding: 8px 6px 6px 6px;
+      padding: 8px 12px 6px 12px;
       justify-content: center;
       cursor: pointer;
     }
   }
   div:last-child {
-    margin-top: 20px;
+    margin-top: 12px;
   }
   .filterCity {
     position: relative;
     img {
+      z-index: 18;
       position: absolute;
-      margin: 12px 0px 0px 15px;
+      margin: 16px 0px 0px 15px;
     }
-    select {
-      color: #b7b7b7;
-      padding: 10px 100px 10px 30px;
-      border: 1px solid #b7b7b7;
-      border-radius: 5px;
-      outline: none;
+    input {
+      color: #c6d3e4 !important;
+      font-size: 14px !important;
+      padding: 20px 40px !important;
+      border: 2px solid #bababa !important;
+      border-radius: 5px !important;
     }
   }
 }

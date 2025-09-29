@@ -1,15 +1,24 @@
 {
-  "include": ["src"],
   "compilerOptions": {
-    "esModuleInterop": true,
-    "baseUrl": "./",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["src/*"],
-      "@shared*": ["src/shared/*"],
-      "@widgets*": ["src/widgets/*"],
-      "@features*": ["src/features/*"],
-      "@entities*": ["src/entities/model/*"]
+      "@/*": ["*"],
+      "@shared/*": ["shared/*"],
+      "@widgets/*": ["widgets/*"],
+      "@features/*": ["features/*"],
+      "@entities/*": ["entities/model/*"]
     },
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "target": "ES2022",
+    "noEmit": false,
+
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleSuffixes": [".ts", ".tsx", ""]
   }
 }

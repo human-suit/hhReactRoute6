@@ -8,7 +8,7 @@ type FiltersState = {
 
 const initialState: FiltersState = {
   city: '',
-  skills: [],
+  skills: ['TypeScript', 'React', 'Redux'],
   searchText: '',
 };
 

@@ -1,14 +1,11 @@
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
-import path, { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import path from 'path';
 import svgr from 'vite-plugin-svgr';
-
-const __filePath = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filePath);
 
 export default defineConfig({
   plugins: [react(), svgr()],
+  base: '/hhReactRoute6/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

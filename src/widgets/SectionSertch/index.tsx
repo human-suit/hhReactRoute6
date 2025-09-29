@@ -1,4 +1,3 @@
-// import { Logo } from '../../shared/ui';
 import style from './index.module.scss';
 import { Sertch } from '../../shared/assets/';
 import { fetchVacancies } from '@/features/modal/modalSlice';

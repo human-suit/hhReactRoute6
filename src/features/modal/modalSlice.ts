@@ -54,7 +54,7 @@ const vacanciesSlice = createSlice({
       })
       .addCase(fetchVacancies.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message;
+        state.error = action.error.message ?? null;
       });
   },
 });
